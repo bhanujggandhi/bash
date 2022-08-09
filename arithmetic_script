@@ -1,0 +1,13 @@
+#!/bin/bash
+
+x=4
+y=2
+
+# Works with $varibalename
+echo $(($x + $y))
+
+# Works with variblename (without $) also
+echo $((x + y))
+
+echo $((x**y))
+echo $((x%y))

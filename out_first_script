@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Author: Bhanuj Gandhi
+# Date Created: 05/08/2022
+# Last Modified: 05/08/2022
+
+# Description
+# Prints "This is my first script" to the terminal
+
+# Usage
+# ./out_first_script
+
+echo "This is my first script"
+exit 0

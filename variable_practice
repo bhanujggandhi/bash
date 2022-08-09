@@ -1,0 +1,8 @@
+#!/bin/bash
+
+student="bhanuj"
+echo "Hello, ${student^}"
+echo "You will learn alot, ${student^^}!" 
+
+# PATH Variable
+#echo $PATH

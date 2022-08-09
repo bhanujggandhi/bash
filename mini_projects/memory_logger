@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -d $HOME/performance ]; then
+  free -h >> $HOME/performance/memory.log
+  cat $HOME/performance/memory.log
+  else
+  mkdir $HOME/performance
+  free -h >> $HOME/performance/memory.log
+  cat $HOME/performance/memory.log
+fi
+

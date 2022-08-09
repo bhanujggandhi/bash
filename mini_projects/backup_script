@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Author: Bhanuj Gandhi
+# Date Created: 05/08/2022
+# Date Modified: 06/08/2022
+
+# Description:
+# This script backs up the files and folders present in home directory and stores it in tar format.
+
+# Usage:
+# ./backup_script
+
+echo "Hello there, ${USER^}"
+echo "I will backup your home directory now, $HOME"
+
+currentdir=$(pwd)
+
+echo "You are running this script from $currentdir."
+echo "Therefore, I will save the backup in $currentdir"
+
+tar -cf $currentdir/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $HOME/* 2>/dev/null
+
+echo "Backup completed successfully"
+
+exit 0
